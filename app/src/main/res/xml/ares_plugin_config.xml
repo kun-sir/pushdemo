@@ -1,0 +1,554 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+    id="com.yitong.jsbridge"
+    version="1.0.0">
+    <name>plugin config</name>
+    <description>
+        配置H5插件
+    </description>
+    <plugin name="ares_navigateTo">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.route.NavigateToPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_navigateToOnline">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.route.NavigateToOnlinePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_navigateBack">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.route.NavigateBackPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_redirectTo">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.route.RedirectToPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_reLaunch">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.route.RelaunchToPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_navigateToPackage">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.route.NavigateToPackagePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_navigateBackPackage">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.route.NavigateBackPackagePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_getNavigateExtraData">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.route.GetNavigateExtraDataPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_getCurrentPages">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.route.GetCurrentPagesPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <!-- ============   ==================================-->
+    <plugin name="ares_initPageTitle">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.title.InitPageTitlePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_hideNavigationBarLoading">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.title.HideNavigationBarLoadingPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_setNavigationBarColor">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.title.SetNavigationBarColorPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_setNavigationBarTitle">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.title.SetNavigationBarTitlePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_showNavigationBarLoading">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.title.ShowNavigationBarLoadingPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+
+    <!--    -->
+    <plugin name="ares_clearStorage">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.storage.ClearStoragePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_getStorageInfo">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.storage.GetStorageInfoPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_getStorage">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.storage.GetStoragePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_removeStorage">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.storage.RemoveStoragePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_setStorage">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.storage.SetStoragePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <!--    -->
+    <plugin name="ares_hideLoading">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.widget.HideLoadingPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_hideToast">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.widget.HideToastPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_showTPwdKeyboard">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.third.PwdKeyboardGuardPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_hideTPwdKeyboard">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.third.HidePassGuardPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_clearTPwdKeyboard">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.third.ClearPassGuardPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_caCertificate">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.third.CACertificatePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_toFaceCheckView">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.third.FaceCheckPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_faceFingerAction">
+        <param
+            name="android-class"
+            value="com.yitong.mobile.biz.launcher.plugin.common.FingerMarkPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_bloothKeySigin">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.third.BloothKeyPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_clientOcr">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.third.OCRPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_showActionSheet">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.widget.ShowActionSheetPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_showLoading">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.widget.ShowLoadingPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_showModal">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.widget.ShowModalPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_showToast">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.widget.ShowToastPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <!--    -->
+    <plugin name="ares_request">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.service.RequestPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_uploadFile">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.service.UploadFilePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <!--    -->
+    <plugin name="ares_scanCode">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.common.ScanCodePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_makePhoneCall">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.common.MakePhoneCallPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_getClipboardData">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.common.GetClipboardDataPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_setClipboardData">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.common.SetClipboardDataPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_getAppInfo">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.common.GetAppInfoPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_getSystemInfo">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.common.GetSystemInfoPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <!--    -->
+    <plugin name="ares_saveImageToPhotosAlbum">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.image.SaveImageToPhotosAlbumPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_saveImage">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.image.SaveImagePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+<!--    <plugin name="ares_previewImage">-->
+<!--        <param-->
+<!--            name="android-class"-->
+<!--            value="com.yitong.mpaas.business.h5container.plugin.image.PreviewImagePlugin" />-->
+<!--        <param-->
+<!--            name="onLoad"-->
+<!--            value="true" />-->
+<!--    </plugin>-->
+    <plugin name="ares_compressImage">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.image.CompressImagePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+<!--    <plugin name="ares_chooseImage">-->
+<!--        <param-->
+<!--            name="android-class"-->
+<!--            value="com.yitong.mpaas.business.h5container.plugin.image.ChooseImagePlugin" />-->
+<!--        <param-->
+<!--            name="onLoad"-->
+<!--            value="true" />-->
+<!--    </plugin>-->
+
+    <plugin name="ares_openMobilePhoto">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.image.OpenMobilePhotoPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <!--    -->
+    <plugin name="ares_choosePhoneContact">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.contacts.ChoosePhoneContactPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <plugin name="ares_gestureAction">
+        <param
+            name="android-class"
+            value="com.yitong.mobile.biz.launcher.plugin.gesture.GesturePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <plugin name="ares_userInfo">
+        <param
+            name="android-class"
+            value="com.yitong.mobile.biz.launcher.plugin.user.UserInfoPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <plugin name="ares_showOtherLoginSelect">
+        <param
+            name="android-class"
+            value="com.yitong.mobile.biz.launcher.plugin.user.ShowOtherLoginPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <plugin name="ares_saveOtherLoginStatue">
+        <param
+            name="android-class"
+            value="com.yitong.mobile.biz.launcher.plugin.user.SaveOtherLoginPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_touchOrFace">
+        <param
+            name="android-class"
+            value="com.yitong.mobile.biz.launcher.plugin.user.TouchOrFacePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <plugin name="ares_saveUserLoginInfo">
+        <param
+            name="android-class"
+            value="com.yitong.mobile.biz.launcher.plugin.user.SaveUserLoginInfoPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <plugin name="ares_loginOut">
+        <param
+            name="android-class"
+            value="com.yitong.mobile.biz.launcher.plugin.user.LoginOutPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_login">
+        <param
+            name="android-class"
+            value="com.yitong.mobile.biz.launcher.plugin.user.LoginPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <plugin name="ares_getPhoneNumber">
+        <param
+            name="android-class"
+            value="com.yitong.mobile.biz.launcher.plugin.common.GetPhoneNumberPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <plugin name="ares_skipToNativePage">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.common.SkipToNativePage" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+
+    <plugin name="ares_post">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.common.HttpPostProxyPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_publicParam">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.common.HttpPublicParamPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_weChatLogin">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.third.WechatUserInfoPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_isWXAppInstall">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.third.IsWXAppInstallPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_switchManager">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.common.SwitchMangerPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_share">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.third.SharePlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+    <plugin name="ares_getLocation">
+        <param
+            name="android-class"
+            value="com.yitong.mpaas.business.h5container.plugin.common.LocationPlugin" />
+        <param
+            name="onLoad"
+            value="true" />
+    </plugin>
+</widget>

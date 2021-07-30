@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <root-path
+        name="root"
+        path="." />
+
+    <external-files-path
+        name="download"
+        path="com.alipay.android.phone.aliupgrade/downloads" />
+
+    <external-path
+        name="download_sdcard"
+        path="ExtDataTunnel/files/com.alipay.android.phone.aliupgrade/downloads" />
+</paths>

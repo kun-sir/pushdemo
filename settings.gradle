@@ -1,0 +1,7 @@
+include ':com-heytap-msp'
+include ':app'
+
+include ':lib-ares-basic'
+include ':lib-ares-mpaas'
+
+include ':common-base'

@@ -1,0 +1,44 @@
+/**
+ *  全局统一配置文件
+ */
+ext {
+    dependencies = [
+            //摘要运算、编码解码
+            "commons-codec"       : "commons-codec:commons-codec:1.15",
+
+            //事件订阅
+            "eventbus"            : "org.greenrobot:eventbus:3.2.0",
+
+            //加密数据库
+            "android-database-sqlcipher"  : "net.zetetic:android-database-sqlcipher:4.4.3@aar",
+
+            //动态权限处理 For developers using AndroidX in their applications
+            "easypermissions"     : "pub.devrel:easypermissions:3.0.0",
+
+            //路由
+            "arouter-api"         : "com.alibaba:arouter-api:1.5.1",
+            "arouter-compiler"    : "com.alibaba:arouter-compiler:1.5.1",
+
+            //沉浸式状态栏
+            "immersionbar"        : "com.gyf.immersionbar:immersionbar:3.0.0",
+
+            //Json解析
+            "gson"                : "com.google.code.gson:gson:2.8.6",
+
+            //universalimageloader
+            "universal-image-loader" : "com.nostra13.universalimageloader:universal-image-loader:1.9.5",
+
+            //glide
+            "glide" : "com.github.bumptech.glide:glide:4.11.0",
+            "glide-compiler" : "com.github.bumptech.glide:compiler:4.11.0",
+
+            //XBanner
+            "XBanner" : "com.github.xiaohaibin:XBanner:1.8.0",
+
+            //greendao
+            "greendao" : "org.greenrobot:greendao:3.3.0",
+
+            //autosize
+            "autosize" : "me.jessyan:autosize:1.2.1",
+    ]
+}

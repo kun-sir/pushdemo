@@ -1,0 +1,60 @@
+apply plugin: 'com.alipay.apollo.optimize'// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "config.gradle"
+
+buildscript {
+    ext.mpaas_artifact = "mpaas-baseline"
+    ext.mpaas_baseline = "10.1.68-29"
+    repositories {
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        maven{ url 'https://maven.aliyun.com/nexus/content/repositories/jcenter'}
+        maven{ url 'https://maven.aliyun.com/nexus/content/repositories/google'}
+//        google()
+//        jcenter()
+        maven {
+            url 'http://mvn.cloud.alipay.com/nexus/content/repositories/releases/'
+            name 'alipay'
+            credentials {
+                username 'mvn_read_ws'
+                password 'mrk8929'
+            }
+        }
+        // 华为推送-配置HMS Core SDK的Maven仓地址。
+        maven {url 'https://developer.huawei.com/repo/'}
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.1"
+        classpath 'com.android.boost.easyconfig:easyconfig:2.4.5'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0'
+
+        // 华为推送-增加agcp配置。
+        classpath 'com.huawei.agconnect:agcp:1.4.2.300'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+        maven {
+            url 'http://mvn.cloud.alipay.com/nexus/content/repositories/releases/'
+            name 'alipay'
+            credentials {
+                username 'mvn_read_ws'
+                password 'mrk8929'
+            }
+        }
+        maven { url uri('../repo') }
+
+        maven { url 'https://jitpack.io' }
+        // 华为推送-配置HMS Core SDK的Maven仓地址。
+        maven {url 'https://developer.huawei.com/repo/'}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

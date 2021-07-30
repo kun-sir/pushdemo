@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <!--        <external-files-path-->
+        <!--            name="download"-->
+        <!--            path="com.alipay.android.phone.aliupgrade/downloads" />-->
+        <!--        <external-path-->
+        <!--            name="download_sdcard"-->
+        <!--            path="ExtDataTunnel/files/com.alipay.android.phone.aliupgrade/downloads" />-->
+
+        <external-files-path
+            name="download"
+            path="com.pactera.nci.innertest/downloads"/>
+        <external-path
+            name="download_sdcard"
+            path="ExtDataTunnel/files/com.pactera.nci.innertest/downloads"/>
+
+        <cache-path
+            name="cache-path"
+            path="." />
+
+        <external-path
+            name="external_files"
+            path="." />
+        <root-path
+            name="root_path"
+            path="." />
+    </paths>
+</resources>
+
+
+
+

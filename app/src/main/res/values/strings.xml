@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">富滇银行</string>
+    <string name="hw_app_id">103403065</string>
+    <string name="mi_app_id">\ 2882303761518854248</string>
+    <string name="mi_app_key">\ 5591885470248</string>
+    <string name="oppo_app_id">30423579</string>
+    <string name="oppo_app_key">3581d32c79ef44e393d7bef7aa30014b</string>
+    <string name="oppo_app_secret">dc275488620243c290b424a2bfc2d593</string>
+    <string name="vivo_app_id">105258971</string>
+    <string name="vivo_app_key">547d5192e46244f4510424b6bce268ee</string>
+</resources>
